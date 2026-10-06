@@ -37,29 +37,8 @@ Websites can then be allowed or blocked using Squid ACL rules.
 
 # 🏗️ Network Architecture
 
-```text
-                         INTERNET
-                            │
-                            │ NAT
-                            ▼
-                 ┌─────────────────────┐
-                 │     Ubuntu Server   │
-                 │     Squid Proxy     │
-                 │                     │
-                 │ 10.50.225.222:3128 │
-                 └──────────┬──────────┘
-                            │
-                     Host-Only Network
-                     10.50.225.0/24
-                            │
-                ┌───────────┴───────────┐
-                │                       │
-         ┌──────▼──────┐         ┌──────▼──────┐
-         │ Participant  │         │ Participant │
-         │ VM 1         │         │ VM 2        │
-         │ Kali/Ubuntu  │         │ Windows     │
-         └──────────────┘         └─────────────┘
-```
+![VirtualBox Network](docs/architecture.jpeg)
+
 
 ### Network interfaces
 
@@ -376,10 +355,13 @@ This allows the administrator to observe requests passing through the proxy and 
 ### Blocked Website
 
 ![Blocked Website](docs/screenshots/05-blocked-site.png)
+![Blocked Website-1](docs/screenshots/05-blocked-site-1.png)
+![Blocked Website-2](docs/screenshots/05-blocked-site-2.png)
+![Blocked Website-3](docs/screenshots/05-blocked-site-3.png)
+![Blocked Website-4](docs/screenshots/05-blocked-site-4.png)
+![Blocked Website-5](docs/screenshots/05-blocked-site-5.png)
+![Blocked Website-6](docs/screenshots/05-blocked-site-6.png)
 
-### Allowed Website
-
-![Allowed Website](docs/screenshots/06-allowed-site.png)
 
 ### Squid Access Log
 
